@@ -24,6 +24,7 @@ public class UserStorage {
     private final UserRepository repository;
     private final UserMapper mapper;
 
+    @SuppressWarnings("UnusedReturnValue")
     public UserModel save(UserModel model) {
         return mapper.toModel(repository.save(mapper.toEntity(model)));
     }

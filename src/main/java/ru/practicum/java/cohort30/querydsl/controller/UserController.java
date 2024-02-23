@@ -5,7 +5,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +14,6 @@ import ru.practicum.java.cohort30.querydsl.model.UserFilterRequest;
 import ru.practicum.java.cohort30.querydsl.model.UserResponse;
 import ru.practicum.java.cohort30.querydsl.storage.UserStorage;
 
-@Validated
 @RestController
 @RequestMapping("/users")
 @RequiredArgsConstructor

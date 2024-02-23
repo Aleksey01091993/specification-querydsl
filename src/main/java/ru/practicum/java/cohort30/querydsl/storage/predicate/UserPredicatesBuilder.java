@@ -10,12 +10,13 @@ import java.util.stream.Collectors;
 
 public class UserPredicatesBuilder {
 
-    private List<SearchCriteria> params;
+    private final List<SearchCriteria> params;
 
     public UserPredicatesBuilder() {
         params = new ArrayList<>();
     }
 
+    @SuppressWarnings("UnusedReturnValue")
     public UserPredicatesBuilder with(String key, String operation, Object value) {
         params.add(new SearchCriteria(key, operation, value));
         return this;
